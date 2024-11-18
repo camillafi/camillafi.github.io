@@ -1,14 +1,14 @@
 /* Yleiset tyylit */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', cursive;
     margin: 0;
     padding: 0;
-    background-color: #f5f1eb;
+    background-color: #EDE7DC;
 }
 
 /* Ylävalikko */
 header {
-    background-color: #b1978b;
+    background-color: #CCAFA5;
     padding: 10px 0;
 }
 
@@ -34,8 +34,9 @@ nav ul li a {
 main h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #5f5f5f;
+    color: #2b2424;
     margin: 20px 0;
+    font-family: 'Playfair Display', cursive;
 }
 
 /* Pääsisältö */
@@ -63,7 +64,7 @@ main h1 {
 .text-box {
     flex: 1;
     max-width: 45%;
-    background-color: #d3c6bb;
+    background-color: #DCD2CC;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -77,7 +78,7 @@ main h1 {
 }
 
 .cta button {
-    background-color: #b1978b;
+    background-color: #DCD2CC;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -87,12 +88,12 @@ main h1 {
 }
 
 .cta button:hover {
-    background-color: #8a6c5f;
+    background-color: #CCAFA5;
 }
 
 /* Alatunniste */
 footer {
-    background-color: #d1d9e6;
+    background-color: #bdc3cb;
     text-align: center;
     padding: 15px;
     font-size: 1em;
