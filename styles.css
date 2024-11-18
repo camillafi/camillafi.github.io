@@ -1,0 +1,100 @@
+/* Yleiset tyylit */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1eb;
+}
+
+/* Ylävalikko */
+header {
+    background-color: #b1978b;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Pääotsikko */
+main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #5f5f5f;
+    margin: 20px 0;
+}
+
+/* Pääsisältö */
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Kuvagalleria */
+.gallery {
+    flex: 1;
+    max-width: 45%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Tekstialue */
+.text-box {
+    flex: 1;
+    max-width: 45%;
+    background-color: #d3c6bb;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA-nappula */
+.cta {
+    text-align: center;
+    margin: 20px;
+}
+
+.cta button {
+    background-color: #b1978b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cta button:hover {
+    background-color: #8a6c5f;
+}
+
+/* Alatunniste */
+footer {
+    background-color: #d1d9e6;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    color: #5f5f5f;
+}
