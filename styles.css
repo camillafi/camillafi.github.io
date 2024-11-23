@@ -52,10 +52,11 @@ main h1 {
 .gallery {
     flex: 1;
     max-width: 45%;
+    padding-left: 10%;
 }
 
 .gallery img {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-bottom: 10px;
 }
