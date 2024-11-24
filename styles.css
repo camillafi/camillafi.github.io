@@ -6,6 +6,14 @@ body {
     background-color: #EDE7DC;
 }
 
+/* Taustakuva mobiilikoolle*/
+
+@media (max-width:768px) {
+    body {
+        background-image: url(Kuvat/etusivu1.jpg);
+        }
+}
+
 /* Ylävalikko */
 header {
     background-color: #CCAFA5;
