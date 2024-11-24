@@ -10,7 +10,12 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
+        @media (max-width:768px) {
+    .gallery {
+        display: none;
+        }
+    }
+    </style>
         
    
 </head>
@@ -19,7 +24,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Etusivu</a></li>
+                <li><a class="active" href="index.html">Etusivu</a></li>
                 <li><a href="palvelut.html">Palvelut</a></li>
                 <li><a href="otayhteytta.html">Ota Yhteyttä</a></li>
             </ul>
@@ -47,20 +52,24 @@
                     pääkaupunkiseudulla yritys- ja yksityisasiakkaille.
                     Huomioimme erityisruokavaliot ja tarjoamme kuljetuspalvelun,
                     jotta asiointi olisi mutkatonta.
-                    
+                </p>
+                <p>Sivustollamme voit tutustua yleisimpiin tilaisuuksiin,
+                    joita järjestämme. Ole meihin yhteydessä yhteydenottolomakkeen kautta.
+                    Vastaamme yhteydenottoihin kahden arkipäivän sisällä ja voimme aloittaa
+                    juuri sinun näköisten juhlien tai muun tilaisuuden suunnittelun.
                 </p>
             </div>
 
             <!-- CTA-nappula -->
             <div class="cta">
-                <button>Soita meille</button>
+                <button class="cta-button" onclick="location.href='otayhteytta.html';">Ota Yhteyttä</button>
             </div>
         </div>
     </main>
 
     <!-- Alatunniste -->
     <footer>
-        <p>Yhteystiedot, sijainti, aukioloajat</p>
+        <p>info@lumoavacatering.fi, 00100 Helsinki, aukioloajat ma-pe 8-16</p>
     </footer>
 </body>
 </html>
