@@ -40,7 +40,8 @@ nav ul li a {
 }
 
 .active {
-    background-color: #493518;
+    background-color: #bdc3cb;
+    padding: 10px;
 }
 
 /* Pääotsikko */
@@ -50,6 +51,8 @@ main h1 {
     color: #493518;
     margin: 20px 0;
     font-family: 'Playfair Display', cursive;
+    background-color: #DCD2CC;
+    
 }
 
 /* Pääsisältö */
@@ -65,7 +68,6 @@ main h1 {
 .gallery {
     flex: 1;
     max-width: 45%;
-    padding-left: 10%;
 }
 
 .gallery img {
@@ -74,34 +76,58 @@ main h1 {
     margin-bottom: 10px;
 }
 
+@media (max-width:768px) {
+    .gallery {
+        display: none;
+        }
+    }
+
 /* Tekstialue */
 .text-box {
     flex: 1;
     max-width: 45%;
     background-color: #DCD2CC;
-    padding: 20px;
+    padding: 40px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* CTA-nappula */
-.cta {
-    text-align: center;
+
+.cta-container {
+    display: flex;
+    justify-content: center;
     margin: 20px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cta button {
     background-color: #DCD2CC;
-    padding: 10px 20px;
+    padding: 20px 150px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+
 }
 
 .cta button:hover {
     background-color: #CCAFA5;
+}
+
+/* Media queries suuremmille näytöille */
+
+@media (min-width: 0px) {
+    .cta-container {
+        width: 90%;
+        margin: 20px auto;
+    }
 }
 
 /* Alatunniste */
