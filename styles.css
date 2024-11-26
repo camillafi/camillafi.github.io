@@ -141,3 +141,57 @@ footer {
     font-size: 1em;
     color: #fff;
 }
+
+/*Palvelut välilehti*/
+
+/*Palvelut body*/
+.palvelut {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.palvelut main {
+    flex: 1;
+}
+
+/* Sisältölohkot vierekkäin */
+.palvelut .content {
+    display: flex;
+    align-items: flex-start; /* Kohdistaa elementit yläreunaan */
+    justify-content: space-between; /* Jakaa tilaa kuvien ja tekstin välillä */
+    padding: 20px;
+    flex-wrap: wrap; /* Varmistaa responsiivisuuden */
+}
+
+/* Kuvaosio */
+.palvelut .kuva1 {
+    flex: 1; /* Kuvalohko käyttää yhtä paljon tilaa */
+    max-width: 40%; /* Maksimileveys, jotta kuva ei vie liikaa tilaa */
+    margin-right: 20px; /* Lisää väliä tekstin ja kuvan väliin */
+    margin-left: 20px;
+}
+
+.palvelut .kuva1 img {
+    width: 70%; /* Kuva mukautuu kuvalohkon kokoon */
+    height: auto; /* Säilyttää kuvasuhteen */
+}
+
+/* Tekstiosio */
+.palvelut .text-box {
+    flex: 2; /* Tekstilohko käyttää enemmän tilaa */
+    max-width: 55%; /* Maksimileveys tekstille */
+    line-height: 1.6; /* Rivivälin parannus */
+}
+
+/*palvelut footer*/
+.palvelut .footer {
+    background-color: #bdc3cb;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    color: #fff;
+    margin-top: auto;
+}
