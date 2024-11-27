@@ -166,16 +166,25 @@ footer {
     align-items: center; /* Kohdistaa elementit keskikohtaan pystysuunnassa */
 }
 
-/* Kuvaosio */
+/* Kuvagalleria */
 .palvelut .gallery {
     flex: 1;
-    max-width: 40%; /* Pienentää kuvan leveyttä */
+    max-width: 40%;
     margin: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 .palvelut .gallery img {
     width: 100%;
     height: auto;
+}
+
+/* Fade-in animaatio */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 /* Tekstiosio */
@@ -190,19 +199,6 @@ footer {
     line-height: 1.6;
     display: flex;
     align-items: center; /* Kohdistaa tekstin keskikohtaan pystysuunnassa */
-}
-
-/* Palvelut body */
-.palvelut {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-.palvelut main {
-    flex: 1;
 }
 
 /* Palvelut footer */
