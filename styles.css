@@ -142,9 +142,10 @@ footer {
     color: #fff;
 }
 
-/*Palvelut välilehti*/
 
-/*Palvelut body*/
+/* Palvelut välilehti */
+
+/* Palvelut body */
 .palvelut {
     display: flex;
     flex-direction: column;
@@ -160,44 +161,51 @@ footer {
 /* Sisältölohkot vierekkäin */
 .palvelut .content {
     display: flex;
-    align-items: flex-start; /* Kohdistaa elementit yläreunaan */
-    justify-content: space-between; /* Jakaa tilaa kuvien ja tekstin välillä */
-    padding: 20px;
     flex-wrap: wrap; /* Varmistaa responsiivisuuden */
+    padding: 20px;
+    align-items: center; /* Kohdistaa elementit keskikohtaan pystysuunnassa */
 }
 
 /* Kuvaosio */
-.palvelut .kuva1 {
-    flex: 1; /* Kuvalohko käyttää yhtä paljon tilaa */
-    max-width: 40%; /* Maksimileveys, jotta kuva ei vie liikaa tilaa */
-    margin-right: 20px; /* Lisää väliä tekstin ja kuvan väliin */
-    margin-left: 20px;
+.palvelut .gallery {
+    flex: 1;
+    max-width: 40%; /* Pienentää kuvan leveyttä */
+    margin: 20px;
 }
 
-.palvelut .kuva1 img {
-    width: 70%; /* Kuva mukautuu kuvalohkon kokoon */
-    height: auto; /* Säilyttää kuvasuhteen */
-}
-
-.palvelut .kuva2 {
-    float: right; /* Asettaa kuvan oikealle */
-    max-width: 40%; /* Maksimileveys, jotta kuva ei vie liikaa tilaa */
-    margin: 20px; /* Lisää väliä tekstin ja kuvan väliin */
-}
-
-.palvelut .kuva2 img {
-    width: 100%; /* Kuva mukautuu kuvalohkon kokoon */
-    height: auto; /* Säilyttää kuvasuhteen */
+.palvelut .gallery img {
+    width: 100%;
+    height: auto;
 }
 
 /* Tekstiosio */
 .palvelut .text-box {
-    flex: 2; /* Tekstilohko käyttää enemmän tilaa */
-    max-width: 55%; /* Maksimileveys tekstille */
-    line-height: 1.6; /* Rivivälin parannus */
+    flex: 1;
+    max-width: 40%; /* Sama leveys kuin kuvilla */
+    background-color: #DCD2CC;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    display: flex;
+    align-items: center; /* Kohdistaa tekstin keskikohtaan pystysuunnassa */
 }
 
-/*palvelut footer*/
+/* Palvelut body */
+.palvelut {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.palvelut main {
+    flex: 1;
+}
+
+/* Palvelut footer */
 .palvelut .footer {
     background-color: #bdc3cb;
     text-align: center;
@@ -207,18 +215,17 @@ footer {
     margin-top: auto;
 }
 
-/*Mobiilikoko*/
+/* Mobiilikoko */
 @media (max-width:768px) {
-    .palvelut .kuva1 {
+    .palvelut .gallery {
         display: none;
-        }
     }
+}
 
-/* Taustakuva Palvelut sivun mobiilikoolle*/
-
+/* Taustakuva Palvelut sivun mobiilikoolle */
 @media (max-width:768px) {
     .palvelut .body {
         background-image: url(Kuvat/palvelutmobiili.jpg);
         background-size: cover;
-        }
+    }
 }
