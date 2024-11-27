@@ -179,6 +179,17 @@ footer {
     height: auto; /* Säilyttää kuvasuhteen */
 }
 
+.palvelut .kuva2 {
+    float: right; /* Asettaa kuvan oikealle */
+    max-width: 40%; /* Maksimileveys, jotta kuva ei vie liikaa tilaa */
+    margin: 20px; /* Lisää väliä tekstin ja kuvan väliin */
+}
+
+.palvelut .kuva2 img {
+    width: 100%; /* Kuva mukautuu kuvalohkon kokoon */
+    height: auto; /* Säilyttää kuvasuhteen */
+}
+
 /* Tekstiosio */
 .palvelut .text-box {
     flex: 2; /* Tekstilohko käyttää enemmän tilaa */
@@ -194,4 +205,20 @@ footer {
     font-size: 1em;
     color: #fff;
     margin-top: auto;
+}
+
+/*Mobiilikoko*/
+@media (max-width:768px) {
+    .palvelut .kuva1 {
+        display: none;
+        }
+    }
+
+/* Taustakuva Palvelut sivun mobiilikoolle*/
+
+@media (max-width:768px) {
+    .palvelut .body {
+        background-image: url(Kuvat/palvelutmobiili.jpg);
+        background-size: cover;
+        }
 }
