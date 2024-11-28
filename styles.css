@@ -101,7 +101,7 @@ main h1 {
 /* Etusivun kuvagalleria */
 .index-page .gallery {
     flex: 1;
-    max-width: 60%;
+    max-width: 45%;
     margin: 20px auto;
     opacity: 0;
     animation: fadeIn 2s forwards;
