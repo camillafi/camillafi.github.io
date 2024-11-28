@@ -67,6 +67,10 @@ main h1 {
 
 /* Kuvagalleria */
 .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     flex: 1;
     max-width: 40%;
     margin: 20px;
@@ -94,20 +98,29 @@ main h1 {
         }
     }
 
+/* Etusivun kuvagalleria */
+.index-page .gallery {
+    flex: 1;
+    max-width: 60%;
+    margin: 20px auto;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
 /* Tekstialue */
 .text-box {
     flex: 1;
-    max-width: 60%; /* Muutettu arvo */
+    max-width: 60%;
     background-color: #DCD2CC;
     padding: 40px;
-    margin: 10px auto; /* Keskittää tekstiboksin */
+    margin: 10px auto;
     border-radius: 10px;
     line-height: 1.6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
-    align-items: center; /* Keskittää sisällön pystysuunnassa */
-    flex-direction: column; /* Asettaa lapset pystysuunnassa */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* CTA-nappula */
@@ -245,7 +258,23 @@ footer {
 
 .gallery, .text-box {
     display: flex;
-    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
-    align-items: center; /* Keskittää sisällön pystysuunnassa */
-    flex-direction: column; /* Asettaa lapset pystysuunnassa */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Piilottaa vasemman kolumnin mobiilikoossa */
+@media (max-width: 768px) {
+    .column:first-child {
+        display: none;
+    }
+}
+
+/* Keskittää oikean kolumnin mobiilikoossa */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 }
