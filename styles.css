@@ -68,7 +68,17 @@ main h1 {
 /* Kuvagalleria */
 .gallery {
     flex: 1;
-    max-width: 45%;
+    max-width: 40%;
+    margin: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Fade-in animaatio */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 /* Kuvagalleria */
@@ -87,12 +97,17 @@ main h1 {
 /* Tekstialue */
 .text-box {
     flex: 1;
-    max-width: 45%;
+    max-width: 60%; /* Muutettu arvo */
     background-color: #DCD2CC;
     padding: 40px;
-    margin: 10px auto;
+    margin: 10px auto; /* Keskittää tekstiboksin */
     border-radius: 10px;
+    line-height: 1.6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+    flex-direction: column; /* Asettaa lapset pystysuunnassa */
 }
 
 /* CTA-nappula */
@@ -162,24 +177,9 @@ footer {
 }
 
 /* Kuvagalleria */
-.palvelut .gallery {
-    flex: 1;
-    max-width: 40%;
-    margin: 20px;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
 .palvelut .gallery img {
     width: 100%;
     height: auto;
-}
-
-/* Fade-in animaatio */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
 }
 
 /* Tekstiosio */
@@ -233,6 +233,7 @@ footer {
     float: left;
     width: 50%;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 /* Rivin tasaus */
@@ -240,4 +241,11 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+.gallery, .text-box {
+    display: flex;
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+    flex-direction: column; /* Asettaa lapset pystysuunnassa */
 }
