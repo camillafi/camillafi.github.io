@@ -228,7 +228,7 @@ table {
     text-align: left;
     color: #493518;
     border-collapse: collapse;
-    width: 95%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 60px;
 }
@@ -265,7 +265,7 @@ table tr:nth-child(even) {
         background-color: #f9f9f9;
     }
     table tr:nth-child(odd) {
-        background-color: #fdf6f3;
+        background-color: #EDE7DC;
     }
     table td {
         color: #493518;
