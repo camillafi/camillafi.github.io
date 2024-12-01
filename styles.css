@@ -208,6 +208,13 @@ footer {
     display: flex;
     align-items: center;
 }
+/* Palvelut CTA-nappula */
+.palvelut .cta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Lisää marginaalia alareunaan */
+}
 
 /* Palvelut footer */
 .palvelut .footer {
@@ -373,4 +380,12 @@ table tr:nth-child(even) {
 .contact-form .form-group input[type="radio"],
 .contact-form .form-group input[type="checkbox"] {
     margin-left: auto;
+}
+
+/* Ota yhteyttä CTA-nappula */
+.otayhteytta .cta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Lisää marginaalia alareunaan */
 }
