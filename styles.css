@@ -338,7 +338,7 @@ table tr:nth-child(even) {
 .contact-form {
     border: 1px solid #DCD2CC; /* Lomakkeen reunat */
     padding: 20px;
-    background-color: #fff;
+    background-color: #DCD2CC;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: flex;
@@ -346,8 +346,31 @@ table tr:nth-child(even) {
     width: 100%;
     max-width: 500px; /* Kavennettu arvo */
     margin: 0 auto; /* Keskittää lomakkeen */
+    margin-bottom: 20px;
 }
 
 .contact-form > * {
     margin-bottom: 15px; /* Vähän tilaa elementtien väliin */
+}
+
+.contact-form label {
+    margin-bottom: 5px; /* Vähennetty marginaali */
+}
+
+/* Asetetaan teksti ja valintapainikkeet samalle riville */
+.contact-form .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form .form-group label {
+    margin-right: 10px;
+    flex: 1;
+    text-align: left;
+}
+
+.contact-form .form-group input[type="radio"],
+.contact-form .form-group input[type="checkbox"] {
+    margin-left: auto;
 }

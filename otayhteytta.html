@@ -7,99 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumoava Catering Pitopalvelu</title>
     <link rel="stylesheet" href="styles.css">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-        
-   
-    </head>
-    <body>
-        <!-- Ylävalikko -->
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Etusivu</a></li>
-                    <li><a href="palvelut.html">Palvelut</a></li>
-                    <li><a class="active" href="otayhteytta.html">Ota Yhteyttä</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <!-- Pääsisältö -->
-        <main>
-            <h1>Lumoava Catering </h1>
-            <form class="contact-form">
+    </style>
+</head>
+<body>
+    <!-- Ylävalikko -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="palvelut.html">Palvelut</a></li>
+                <li><a class="active" href="otayhteytta.html">Ota Yhteyttä</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <label for="nimi">Asiakkaan nimi:</label><br>
-                <input type="text" id="nimi" name="nimi"><br>
+    <!-- Pääsisältö -->
+    <main>
+        <h1>Lumoava Catering</h1>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nimi">Asiakkaan nimi:</label>
+                <input type="text" id="nimi" name="nimi">
+            </div>
 
-                <label for="puhelin">Puhelinnumero:</label><br>
-                <input type="text" id="puhelin" name="puhelin"><br>
+            <div class="form-group">
+                <label for="puhelin">Puhelinnumero:</label>
+                <input type="text" id="puhelin" name="puhelin">
+            </div>
 
-                <label for="sposti">Sähköposti:</label><br>
-                <input type="text" id="sposti" name="sposti"><br>
+            <div class="form-group">
+                <label for="sposti">Sähköposti:</label>
+                <input type="text" id="sposti" name="sposti">
+            </div>
 
-                <label for="paikka">Paikkakunta:</label><br>
-                <input type="text" id="paikka" name="paikka"><br>
+            <div class="form-group">
+                <label for="paikka">Paikkakunta:</label>
+                <input type="text" id="paikka" name="paikka">
+            </div>
 
-                <label for="osoite">Osoite ja postinumero:</label><br>
-                <input type="text" id="osoite" name="osoite"><br>
+            <div class="form-group">
+                <label for="osoite">Osoite ja postinumero:</label>
+                <input type="text" id="osoite" name="osoite">
+            </div>
 
-                <label for="hlo">Henkilömäärä:</label><br>
-                <input type="text" id="hlo" name="hlo"><br><br>
+            <div class="form-group">
+                <label for="hlo">Henkilömäärä:</label>
+                <input type="text" id="hlo" name="hlo">
+            </div>
 
-                <label for="tilaisuus">Tilaisuus:</label><br><br>
-
+            <label for="tilaisuus">Tilaisuus:</label>
+            <div class="form-group">
+                <label for="buffet">Kolmen ruokalajin buffet</label>
                 <input type="radio" id="buffet" name="tilaisuus" value="buffet">
-                <label for="buffet">Kolmen ruokalajin buffet</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="menu">Premium menu</label>
                 <input type="radio" id="menu" name="tilaisuus" value="menu">
-                <label for="menu">Premium menu</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="cocktail">Cocktail-menu</label>
                 <input type="radio" id="cocktail" name="tilaisuus" value="cocktail">
-                <label for="cocktail">Cocktail-menu</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="brunssi">Brunssi tai aamiaisbuffet</label>
                 <input type="radio" id="brunssi" name="tilaisuus" value="brunssi">
-                <label for="brunssi">Brunssi tai aamiaisbuffet</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="teema">Teematarjoilu</label>
                 <input type="radio" id="teema" name="tilaisuus" value="teema">
-                <label for="teema">Teematarjoilu</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="kahvi">Kahvitarjoilu</label>
                 <input type="radio" id="kahvi" name="tilaisuus" value="kahvi">
-                <label for="kahvi">Kahvitarjoilu</label><br><br>
+            </div>
 
+            <div class="form-group">
                 <label for="paivaklo">Päivämäärä ja kellon aika:</label>
-                <input type="datetime-local" id="paivaklo" name="paivaklo"><br><br>
+                <input type="datetime-local" id="paivaklo" name="paivaklo">
+            </div>
 
-                <label for="palvelut">Lisäpalvelut:</label><br><br>
-
+            <label for="palvelut">Lisäpalvelut:</label>
+            <div class="form-group">
+                <label for="juomat">Juomatarjoilu</label>
                 <input type="checkbox" id="juomat" name="juomat" value="juomat">
-                <label for="juomat">Juomatarjoilu</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="baari">Baaritarjoilu</label>
                 <input type="checkbox" id="baari" name="baari" value="baari">
-                <label for="baari">Baaritarjoilu</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="hlokunta">Tarjoilijat ja/tai kokki paikan päälle</label>
                 <input type="checkbox" id="hlokunta" name="hlokunta" value="hlokunta">
-                <label for="hlokunta">Tarjoilijat ja/tai kokki paikan päälle</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="astiat">Astiapaketti</label>
                 <input type="checkbox" id="astiat" name="astiat" value="astiat">
-                <label for="astiat">Astiapaketti</label><br>
-
+            </div>
+            <div class="form-group">
+                <label for="liinat">Pöytäliinat</label>
                 <input type="checkbox" id="liinat" name="liinat" value="liinat">
-                <label for="liinat">Pöytäliinat</label><br><br>
+            </div>
 
-                <label for="toiveet">Allergiat ja lisätoiveet:</label><br>
-                <input type="text" id="toiveet" name="toiveet"><br><br>
+            <div class="form-group">
+                <label for="toiveet">Allergiat ja lisätoiveet:</label>
+                <input type="text" id="toiveet" name="toiveet">
+            </div>
 
-                <input type="submit" value="Lähetä">
+            <input type="submit" value="Lähetä">
+        </form>
+    </main>
 
-              </form>
-        </main>
-    
-        <!-- Alatunniste -->
-        <footer>
-            <p>info@lumoavacatering.fi | Mannerheimintie 14-20, 00100 Helsinki | aukioloajat ma-pe 8-16</p>
-        </footer>
-    </body>
-    </html>
+    <!-- Alatunniste -->
+    <footer>
+        <p>info@lumoavacatering.fi | Mannerheimintie 14-20, 00100 Helsinki | aukioloajat ma-pe 8-16</p>
+    </footer>
+</body>
+</html>
