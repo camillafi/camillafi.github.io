@@ -29,39 +29,71 @@
         <!-- Pääsisältö -->
         <main>
             <h1>Lumoava Catering </h1>
-            <div class="content">
-                <!-- Kuvagalleria -->
-                <div class="gallery">
-                    <img src="kuvat/etusivu1.jpg" alt="Catering-kuva 1">
-                    <img src="kuvat/etusivu2.jpg" alt="Catering-kuva 2">
-                    <img src="kuvat/etusivu3.jpg" alt="Catering-kuva 3">
-                </div>
-    
-                <!-- Tekstialue -->
-                <div class="text-box">
-                    
-                    <p>Lumoava Catering on Helsingin keskustassa sijaitseva pitopalveluyritys,
-                        joka muuntautuu asiakkaan toiveisiin räätälöimällä asiakkaan tarpeisiin sopivat
-                        palvelut erilaisiin tilaisuuksiin.
-                    </p>
-                    <p>Suunnittelemme juhlia ja järjestämme erilaisia tilaisuuksia 
-                        pääkaupunkiseudulla yritys- ja yksityisasiakkaille.
-                        Huomioimme erityisruokavaliot ja tarjoamme kuljetuspalvelun,
-                        jotta asiointi olisi mutkatonta.
-                    </p>
-                    <p>Sivustollamme voit tutustua yleisimpiin tilaisuuksiin,
-                        joita järjestämme. Ole meihin yhteydessä yhteydenottolomakkeen kautta.
-                        Vastaamme yhteydenottoihin kahden arkipäivän sisällä ja voimme aloittaa
-                        juuri sinun näköisten juhlien tai muun tilaisuuden suunnittelun.
-                    </p>
-                </div>
-    
-                <!-- CTA-nappula -->
-                <div class="cta-container">
-                <div class="cta">
-                    <button class="cta-button" onclick="location.href='mailto:info@lumoavacatering.fi';">Ota Yhteyttä</button>
-                </div>
-            </div>
+            <form>
+                <label for="nimi">Asiakkaan nimi:</label><br>
+                <input type="text" id="nimi" name="nimi"><br>
+
+                <label for="puhelin">Puhelinnumero:</label><br>
+                <input type="text" id="puhelin" name="puhelin"><br>
+
+                <label for="sposti">Sähköposti:</label><br>
+                <input type="text" id="sposti" name="sposti"><br>
+
+                <label for="paikka">Paikkakunta:</label><br>
+                <input type="text" id="paikka" name="paikka"><br>
+
+                <label for="osoite">Osoite ja postinumero:</label><br>
+                <input type="text" id="osoite" name="osoite"><br>
+
+                <label for="hlo">Henkilömäärä:</label><br>
+                <input type="text" id="hlo" name="hlo"><br><br>
+
+                <label for="tilaisuus">Tilaisuus:</label><br><br>
+
+                <input type="radio" id="buffet" name="tilaisuus" value="buffet">
+                <label for="buffet">Kolmen ruokalajin buffet</label><br>
+
+                <input type="radio" id="menu" name="tilaisuus" value="menu">
+                <label for="menu">Premium menu</label><br>
+
+                <input type="radio" id="cocktail" name="tilaisuus" value="cocktail">
+                <label for="cocktail">Cocktail-menu</label><br>
+
+                <input type="radio" id="brunssi" name="tilaisuus" value="brunssi">
+                <label for="brunssi">Brunssi tai aamiaisbuffet</label><br>
+
+                <input type="radio" id="teema" name="tilaisuus" value="teema">
+                <label for="teema">Teematarjoilu</label><br>
+
+                <input type="radio" id="kahvi" name="tilaisuus" value="kahvi">
+                <label for="kahvi">Kahvitarjoilu</label><br><br>
+
+                <label for="paivaklo">Päivämäärä ja kellon aika:</label>
+                <input type="datetime-local" id="paivaklo" name="paivaklo"><br><br>
+
+                <label for="palvelut">Lisäpalvelut:</label><br><br>
+
+                <input type="checkbox" id="juomat" name="juomat" value="juomat">
+                <label for="juomat">Juomatarjoilu</label><br>
+
+                <input type="checkbox" id="baari" name="baari" value="baari">
+                <label for="baari">Baaritarjoilu</label><br>
+
+                <input type="checkbox" id="hlokunta" name="hlokunta" value="hlokunta">
+                <label for="hlokunta">Tarjoilijat ja/tai kokki paikan päälle</label><br>
+
+                <input type="checkbox" id="astiat" name="astiat" value="astiat">
+                <label for="astiat">Astiapaketti</label><br>
+
+                <input type="checkbox" id="liinat" name="liinat" value="liinat">
+                <label for="liinat">Pöytäliinat</label><br><br>
+
+                <label for="toiveet">Allergiat ja lisätoiveet:</label><br>
+                <input type="text" id="toiveet" name="toiveet"><br><br>
+
+                <input type="submit" value="Lähetä">
+
+              </form>
         </main>
     
         <!-- Alatunniste -->
