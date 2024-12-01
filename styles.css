@@ -333,3 +333,21 @@ table tr:nth-child(even) {
         box-sizing: border-box;
     }
 }
+
+/* Ota yhteyttä -sivun lomake */
+.contact-form {
+    border: 1px solid #DCD2CC; /* Lomakkeen reunat */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Asettaa elementit allekkain */
+    width: 100%;
+    max-width: 500px; /* Kavennettu arvo */
+    margin: 0 auto; /* Keskittää lomakkeen */
+}
+
+.contact-form > * {
+    margin-bottom: 15px; /* Vähän tilaa elementtien väliin */
+}
