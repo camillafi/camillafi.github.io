@@ -6,13 +6,14 @@ body {
     background-color: #EDE7DC;
 }
 
-/* Taustakuva mobiilikoolle*/
-
-@media (max-width:768px) {
+/* Taustakuva mobiilikoolle */
+@media (max-width: 768px) {
     body {
-        background-image: url(Kuvat/mobiilitaustakuva.jpg);
+        background-image: url('Kuvat/palvelutmobiili.jpg');
         background-size: cover;
-        }
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 /* Ylävalikko */
@@ -53,7 +54,6 @@ main h1 {
     font-family: 'Playfair Display', cursive;
     background-color: #DCD2CC;
     padding: 15px;
-    
 }
 
 /* Pääsisältö */
@@ -92,11 +92,11 @@ main h1 {
     margin-bottom: 20px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .gallery {
         display: none;
-        }
     }
+}
 
 /* Etusivun kuvagalleria */
 .index-page .gallery {
@@ -165,7 +165,6 @@ footer {
     color: #fff;
 }
 
-
 /* Palvelut välilehti */
 
 /* Palvelut body */
@@ -208,13 +207,6 @@ footer {
     display: flex;
     align-items: center;
 }
-/* Palvelut CTA-nappula */
-.palvelut .cta-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px; /* Lisää marginaalia alareunaan */
-}
 
 /* Palvelut footer */
 .palvelut .footer {
@@ -244,7 +236,6 @@ table {
 table th, table td {
     border: 1px solid  #DCD2CC;
     padding: 10px;
-    
 }
 
 /* Taulukon otsikkorivin tyyli */
@@ -280,28 +271,26 @@ table tr:nth-child(even) {
 }
 
 /* Palvelut mobiilikoko */
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .palvelut .gallery {
         display: none;
     }
 }
 
 /* Taustakuva Palvelut sivun mobiilikoolle */
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .palvelut .body {
-        background-image: url(Kuvat/palvelutmobiili.jpg);
+        background-image: url('Kuvat/palvelutmobiili.jpg');
         background-size: cover;
     }
 }
 
 /* Etusivun rakenne */
 
-/* Kolumnin oma muotoilu*/
-
+/* Kolumnin oma muotoilu */
 * {
     box-sizing: border-box;
-  }
-
+}
 
 /* Kolumni */
 .column {
@@ -343,25 +332,25 @@ table tr:nth-child(even) {
 
 /* Ota yhteyttä -sivun lomake */
 .contact-form {
-    border: 1px solid #DCD2CC; /* Lomakkeen reunat */
+    border: 1px solid #DCD2CC;
     padding: 20px;
     background-color: #DCD2CC;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: flex;
-    flex-direction: column; /* Asettaa elementit allekkain */
+    flex-direction: column;
     width: 100%;
-    max-width: 500px; /* Kavennettu arvo */
-    margin: 0 auto; /* Keskittää lomakkeen */
+    max-width: 500px;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
 .contact-form > * {
-    margin-bottom: 15px; /* Vähän tilaa elementtien väliin */
+    margin-bottom: 15px;
 }
 
 .contact-form label {
-    margin-bottom: 5px; /* Vähennetty marginaali */
+    margin-bottom: 5px;
 }
 
 /* Asetetaan teksti ja valintapainikkeet samalle riville */
@@ -369,23 +358,21 @@ table tr:nth-child(even) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
-.contact-form .form-group label {
-    margin-right: 10px;
-    flex: 1;
-    text-align: left;
-}
-
-.contact-form .form-group input[type="radio"],
-.contact-form .form-group input[type="checkbox"] {
-    margin-left: auto;
-}
-
-/* Ota yhteyttä CTA-nappula */
+/* Palvelut ja Ota yhteyttä CTA-nappula */
+.palvelut .cta-container,
 .otayhteytta .cta-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 40px; /* Lisää marginaalia alareunaan */
+    margin-bottom: 40px;
+}
+/* Ota yhteyttä tekstiboksi */
+.otayhteytta .text-box {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
 }
