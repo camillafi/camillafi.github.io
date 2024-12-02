@@ -150,6 +150,18 @@ main h2 {
     flex-direction: column;
 }
 
+.text-box p {
+    margin: 10px 0;
+    text-indent: 0;
+}
+
+@media (max-width: 768px) {
+    .text-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
 /* CTA-nappula */
 .cta-container {
     display: flex;
