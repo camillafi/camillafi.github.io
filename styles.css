@@ -421,7 +421,7 @@ table tr:nth-child(even) {
 @media (max-width: 400px) {
     .text-box {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         box-sizing: border-box;
         text-align: left;
     }
@@ -459,5 +459,13 @@ table tr:nth-child(even) {
     nav ul li a {
         padding: 10px;
         font-size: 14px;
+    }
+}
+/* Palvelut-sivun tekstiboksi mobiilikoossa */
+@media (max-width: 768px) {
+    .palvelut .text-box {
+        max-width: 90%;
+        padding: 20px;
+        margin: 10px auto;
     }
 }
