@@ -45,6 +45,21 @@ nav ul li a {
     padding: 10px;
 }
 
+/* Navigointipalkin linkkien hover-efekti */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #DCD2CC;
+    color: #493518;
+    border-radius: 5px;
+}
+
 /* Pääotsikko */
 main h1 {
     text-align: center;
