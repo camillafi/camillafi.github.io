@@ -291,6 +291,8 @@ table th {
     background-color: #CCAFA5;
     text-align: left;
     padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Parannettu luettavuus: vuorottelevat rivien värit */
