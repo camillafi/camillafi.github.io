@@ -38,6 +38,9 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .active {
@@ -58,6 +61,7 @@ nav ul li a:hover {
     background-color: #DCD2CC;
     color: #493518;
     border-radius: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 /* Pääotsikko */
@@ -203,6 +207,7 @@ footer {
     padding: 15px;
     font-size: 20px;
     color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Palvelut välilehti */
